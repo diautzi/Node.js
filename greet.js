@@ -3,7 +3,7 @@ function greet() {
   console.log("hi");
 }
 
-// functions are first class meaning that they can be passed around as variables]
+// // functions are first class meaning that they can be passed around as variables]
 function logGreeting(fn) {
   fn();
 }
@@ -16,5 +16,7 @@ let greetMe = function () {
   console.log("Hi Diana");
 };
 
-greetMe();
-logGreeting(greetMe);
+// greetMe();
+// logGreeting(greetMe);
+
+module.exports = greet;
