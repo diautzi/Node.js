@@ -11,22 +11,22 @@ function logGreeting(fn) {
 logGreeting(greet);
 
 // function expression
-
 let greetMe = function () {
   console.log("Hi Diana");
 };
 
-// greetMe();
-// logGreeting(greetMe);
-
-module.exports = greet;
+greetMe();
+logGreeting(greetMe);
 
 let person = {
   firstname: "Diana",
   lastname: "Utan",
   greet: function () {
-    console.log("Hello, " + this.firstname + " " + this.lastname)
-  }
+    console.log("Hello, " + this.firstname + " " + this.lastname);
+  },
 };
 
 person.greet();
+
+// exporting only needed functions from diferent modules
+module.exports = greet;
