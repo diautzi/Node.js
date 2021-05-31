@@ -20,3 +20,13 @@ let greetMe = function () {
 // logGreeting(greetMe);
 
 module.exports = greet;
+
+let person = {
+  firstname: "Diana",
+  lastname: "Utan",
+  greet: function () {
+    console.log("Hello, " + this.firstname + " " + this.lastname)
+  }
+};
+
+person.greet();
