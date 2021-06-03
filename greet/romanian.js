@@ -1,5 +1,7 @@
+var greetings = require("./greetings.json");
+
 let greet = function () {
-  console.log("Buna ziua");
+  console.log(greetings.ro);
 };
 
 module.exports = greet;
