@@ -1,3 +1,4 @@
-const greetMe = require("./greet");
+const greet = require("./greet");
 
-greetMe();
+greet.english();
+greet.romanian();
